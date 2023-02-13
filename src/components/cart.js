@@ -3,9 +3,9 @@ import Total from "./total";
 import {Button } from "react-bootstrap";
 
 function Cart({products, removeProductFromCart, changeCount}) {
-  return <div className="container p-3">
-    <h2>Кошик</h2>
-    <ul className={''}> 
+  return <div className="cart border-left">
+    <h2><img className="img-shop mr-2" src="../images/shop.png" alt='cart'/>Кошик</h2>
+    <ul className={'ul-cart'}> 
     {products?.map(product => <li className={"place-cart pb-4"} key={product.id}>{product.title}
     <div className={'ml-3 '}><div className={"mb-1"}><button className={'badge-style'}
             onClick={() =>(product.count <= 1) ? removeProductFromCart(product.id) : changeCount(product.id, product.count - 1)} >-</button>
@@ -18,6 +18,7 @@ function Cart({products, removeProductFromCart, changeCount}) {
     </div> </li>)}
   </ul> 
     <Total products={products}/> <Button variant={'dark'}>Оформити замовлення</Button>
+  
   </div>
 }
 

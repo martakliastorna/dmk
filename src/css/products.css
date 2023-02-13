@@ -1,3 +1,15 @@
+
+.container-shop {
+  background-color: white;
+  display: flex;
+}
+.cart {
+  background-color: #F8F8F8;
+  padding: 2rem;
+  min-width: 18rem;
+  height: 100%;
+  box-sizing: border-box;
+}
 .product{
   box-sizing: border-box;
   padding: .5rem;
@@ -37,4 +49,7 @@
 display: flex;
 align-items: center;
 justify-content: space-between;
+}
+.ul-cart {
+  padding: 0;
 }

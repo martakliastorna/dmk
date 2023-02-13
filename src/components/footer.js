@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-  <footer className="main-page container pt-4 pb-4 border-top">
+  <footer className="main-page container pt-4 pb-4">
     <div> <img className="logotype" src="../images/logo.png" alt="logotype"/>
     </div>
   <div className="show-hide">

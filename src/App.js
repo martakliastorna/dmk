@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Login from './pages/login';
 import Sign_in from './pages/sign_in';
 import Home from './pages/home';
-import Shop from './pages/shop';
+import Products from './pages/products';
 import Blog from './pages/blog';
 import Contacts from './pages/contacts';
 import Condition from './pages/condition';
@@ -17,7 +17,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/blog' element={<Blog />} />
-        <Route path='/shop' element={<Shop />} />
+        <Route path='/shop' element={<Products />} />
         <Route path='/condition/' element={<Condition />} >
           <Route path='delivery' element={<Delivery />} />
           <Route path='guaranty' element={<Guaranty />} />

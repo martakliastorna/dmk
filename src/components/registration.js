@@ -8,6 +8,7 @@ $(document).ready(function () {
     $(`body`).toggleClass(`lock`);
   });
 });
+
 function Registration() {
   return (
     <div className="registration-active">
